@@ -69,7 +69,7 @@ class App extends Component {
 
     marker.addListener('click', function() {
       
-      // change the content
+      // Change the Content
       infowindow.setContent(contentString)
       
       // Open an InfoWindow
