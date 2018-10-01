@@ -1,7 +1,31 @@
 import React, { Component } from 'react'
 // import ReactDOM from 'react-dom'
-import axios from 'axios'
+//import axios from 'axios'
 
+class DisMap extends Component {
+  state = {
+    places: [
+      {name: "Splash Moutain", location: {lat: 28.419425, lng: -81.585062}},
+      {name: "Space Moutain", location: {lat: 28.419278, lng: -81.578037}},
+      {name: "Haunted Mansion", location: {lat: 28.420424, lng: -81.582883}},
+      {name: "Toy Story Mania!", location: {lat: 28.356365, lng: -81.561508}},
+      {name: "Expedition Everest", location: {lat: 28.358982, lng: -81.587155}},
+      {name: "Twilight Zone Tower of Terror", location: {lat: 28.360344, lng: -81.559917}},
+      {name: "Mission: Space", location: {lat: 28.374235, lng: -81.547006}},
+      {name: "Cinderella's Royal Table", location: {lat: 28.419722, lng: -81.581232}},
+      {name: "Be Our Guest", location: {lat: 28.421364, lng: -81.580714}},
+      {name: "Sci-Fi Dine-In Theater", location: {lat: 28.355898, lng: -81.559725}},
+      {name: "50s Prime Time Cafe", location: {lat: 28.357578, lng: -81.558714}},
+      {name: "Chef Mickey's", location: {lat: 28.414451, lng: -81.574385}},
+      {name: "Akershus Royal Banquet Hall", location: {lat: 28.370486, lng: -81.546795}},
+      {name: "Garden Grill", location: {lat: 28.374089, lng: -81.552675}},
+    ]
+  }
+}
+
+export default DisMap
+
+/* -- Code From WT series
 class DisMap extends Component {
 
   state = {
@@ -98,3 +122,4 @@ function loadScript(source) {
 }
     
 export default DisMap
+*/
