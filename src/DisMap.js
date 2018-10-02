@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 // import ReactDOM from 'react-dom'
-//import axios from 'axios'
+// import axios from 'axios'
 
 class DisMap extends Component {
   state = {
-    places: [
+    places: [ // Our Favorite DW Places
       {name: "Splash Moutain", location: {lat: 28.419425, lng: -81.585062}},
       {name: "Space Moutain", location: {lat: 28.419278, lng: -81.578037}},
       {name: "Haunted Mansion", location: {lat: 28.420424, lng: -81.582883}},
@@ -21,20 +21,10 @@ class DisMap extends Component {
       {name: "Garden Grill", location: {lat: 28.374089, lng: -81.552675}},
     ]
   }
-}
-
-export default DisMap
-
-/* -- Code From WT series
-class DisMap extends Component {
-
-  state = {
-    venues: []
-  }
 
   componentDidMount() {
-    this.getVenues()
-    // this.loadMap()
+    // this.getVenues()
+    this.loadMap()
   }
 
   loadMap = () => { // script on index.html. Can I ref that?
@@ -42,6 +32,7 @@ class DisMap extends Component {
     window.initMap = this.initMap
   }
 
+  /*
   getVenues = () => {
     const endPoint = "https://api.foursquare.com/v2/venues/explore?"
     const parameters = {
@@ -51,7 +42,7 @@ class DisMap extends Component {
       near: "Disney World",
       v: "20180323"
     }
-
+    
     // From Walthrough video series
     // Run: npm install axios
     axios.get(endPoint + new URLSearchParams(parameters)) //URLSearchParams is actual function, don't change
@@ -65,6 +56,7 @@ class DisMap extends Component {
       })
 
   }
+  */
 
   initMap = () => {
 
@@ -73,11 +65,13 @@ class DisMap extends Component {
       center: {lat: 28.385233, lng: -81.563873},
       zoom: 13
     })
-    
+
+    /*
     // create an infowindow
     var infowindow = new window.google.maps.InfoWindow()
 
     // display dynamic markers
+    /
     this.state.venues.map(myVenue => {
 
     var contentString = `${myVenue.venue.name}` // Removed Place Name in WT 
@@ -91,14 +85,15 @@ class DisMap extends Component {
     // click on a marker
     marker.addListener('click', function() {
       
-      // Change the Content
-      infowindow.setContent(contentString)
+    // Change the Content
+    infowindow.setContent(contentString)
       
-      // Open an InfoWindow
-      infowindow.open(map, marker)
+    // Open an InfoWindow
+    infowindow.open(map, marker)
     })
     
   });
+  */
   
 }      
   
@@ -122,4 +117,3 @@ function loadScript(source) {
 }
     
 export default DisMap
-*/
